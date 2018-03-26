@@ -1,0 +1,8 @@
+com/securion/qr/infrastructure/rest/QRCodeRestEndpoint.class
+MainApp.class
+com/securion/qr/core/dto/QRCodeDTO.class
+com/securion/qr/core/QRCodeConverter.class
+com/securion/qr/infrastructure/repository/CustomQRCodeRepository.class
+com/securion/qr/application/service/QRCodeService.class
+com/securion/qr/application/repository/QRCodeRepository.class
+com/securion/qr/core/entity/QRCode.class

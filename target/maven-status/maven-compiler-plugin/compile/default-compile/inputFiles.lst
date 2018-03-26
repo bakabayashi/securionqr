@@ -1,0 +1,8 @@
+/home/roman/IdeaProjects/SecurionQR/src/main/java/com/securion/qr/core/entity/QRCode.java
+/home/roman/IdeaProjects/SecurionQR/src/main/java/MainApp.java
+/home/roman/IdeaProjects/SecurionQR/src/main/java/com/securion/qr/infrastructure/repository/CustomQRCodeRepository.java
+/home/roman/IdeaProjects/SecurionQR/src/main/java/com/securion/qr/core/dto/QRCodeDTO.java
+/home/roman/IdeaProjects/SecurionQR/src/main/java/com/securion/qr/application/service/QRCodeService.java
+/home/roman/IdeaProjects/SecurionQR/src/main/java/com/securion/qr/application/repository/QRCodeRepository.java
+/home/roman/IdeaProjects/SecurionQR/src/main/java/com/securion/qr/core/QRCodeConverter.java
+/home/roman/IdeaProjects/SecurionQR/src/main/java/com/securion/qr/infrastructure/rest/QRCodeRestEndpoint.java
