@@ -1,3 +1,6 @@
 server:
   port: 8090
-  contextPath: /securion/qr
+  domain: localhost
+  protocol: http
+  servlet:
+    contextPath: /securionqr

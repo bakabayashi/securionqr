@@ -9,4 +9,5 @@ import java.util.UUID;
 @Setter
 public class PersistedQrCodeDTO {
     private UUID uuid;
+    private String url;
 }

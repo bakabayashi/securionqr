@@ -14,9 +14,10 @@ import static org.springframework.http.HttpStatus.ACCEPTED;
 import static org.springframework.http.HttpStatus.CREATED;
 
 @RestController
-@RequestMapping("/api/v1/qr-codes")
+@RequestMapping(QrCodeRestEndpoint.QR_CODES_PATH)
 @RequiredArgsConstructor
 public class QrCodeRestEndpoint {
+    public static final String QR_CODES_PATH = "/api/v1/qr-codes";
     private final QrCodeService qrCodeService;
 
     @PostMapping
