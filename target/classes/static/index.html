@@ -13,12 +13,29 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script type="text/javascript" src="lib/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="webjars/stomp-websocket/2.3.3/stomp.js"></script>
 <script>
+  var client = Stomp.client("ws://localhost:8090/securionqr/qrCodeWebSocketEndpoint");
+  var uuid;
+
   $.post("http://localhost:8090/securionqr/api/v1/qr-codes/", function (data) {
     jQuery(function(){
       jQuery('#output').qrcode(data.url);
+      uuid = data.uuid;
+      console.log(uuid);
     })
   });
+
+  console.log(uuid);
+
+  client.connect(uuid, "", function () {
+    client.subscribe("/topic", function (message) {
+      console.log(uuid);
+      if(message.body) {
+        console.log("message")
+      }
+    })
+  })
 </script>
 
 </body>
