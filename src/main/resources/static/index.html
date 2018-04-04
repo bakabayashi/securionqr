@@ -17,16 +17,17 @@
 <script>
   var client = Stomp.client("ws://localhost:8090/securionqr/qrCodeWebSocketEndpoint");
 
-  $.post("http://localhost:8090/securionqr/api/v1/qr-codes/", function (data) {
+  var response = $.post("http://localhost:8090/securionqr/api/v1/qr-codes/", function (data) {
     jQuery(function(){
       jQuery('#output').qrcode(data.url);
     })
-  });
+  })
 
   client.connect("", "", function () {
-    client.subscribe("/topic", function (message) {
+    client.subscribe("/queue", function (message) {
       if(message.body) {
-        console.log("message")
+        var body = JSON.parse(response.responseText)
+        console.log(body.uuid)
       }
     })
   })

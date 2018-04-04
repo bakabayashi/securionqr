@@ -16,23 +16,18 @@
 <script type="text/javascript" src="webjars/stomp-websocket/2.3.3/stomp.js"></script>
 <script>
   var client = Stomp.client("ws://localhost:8090/securionqr/qrCodeWebSocketEndpoint");
-  var uuid;
 
-  $.post("http://localhost:8090/securionqr/api/v1/qr-codes/", function (data) {
+  var response = $.post("http://localhost:8090/securionqr/api/v1/qr-codes/", function (data) {
     jQuery(function(){
       jQuery('#output').qrcode(data.url);
-      uuid = data.uuid;
-      console.log(uuid);
     })
-  });
+  })
 
-  console.log(uuid);
-
-  client.connect(uuid, "", function () {
-    client.subscribe("/topic", function (message) {
-      console.log(uuid);
+  client.connect("", "", function () {
+    client.subscribe("/queue", function (message) {
       if(message.body) {
-        console.log("message")
+        var body = JSON.parse(response.responseText)
+        console.log(body.uuid)
       }
     })
   })

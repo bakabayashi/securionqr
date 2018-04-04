@@ -7,6 +7,9 @@ import com.securion.qr.application.core.entity.QrCode;
 import com.securion.qr.application.core.exception.QrCodeNotFoundException;
 import com.securion.qr.application.repository.QrCodeRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.messaging.MessageHeaders;
+import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
+import org.springframework.messaging.simp.SimpMessageType;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 
@@ -31,7 +34,14 @@ public class QrCodeService {
 
         /*update(qrCodeUpdateDTO, qrCode);*/
 
-        template.convertAndSend("/topic","dupa");
+        template.convertAndSendToUser(uuid.toString(),"/queue","dupa", createHeaders(uuid.toString()));
+    }
+
+    private MessageHeaders createHeaders(String sessionId) {
+        SimpMessageHeaderAccessor headerAccessor = SimpMessageHeaderAccessor.create(SimpMessageType.MESSAGE);
+        headerAccessor.setSessionId(sessionId);
+        headerAccessor.setLeaveMutable(true);
+        return headerAccessor.getMessageHeaders();
     }
 
 }
