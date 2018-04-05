@@ -29,12 +29,12 @@ public class QrCodeService {
     }
 
     public void processCode(UUID uuid, QrCodeUpdateDTO qrCodeUpdateDTO) {
-       /* QrCode qrCode = qrCodeRepository.findOne(uuid)
-                .orElseThrow(() -> new QrCodeNotFoundException(uuid));*/
+       QrCode qrCode = qrCodeRepository.findOne(uuid)
+                .orElseThrow(() -> new QrCodeNotFoundException(uuid));
 
-        /*update(qrCodeUpdateDTO, qrCode);*/
+        update(qrCodeUpdateDTO, qrCode);
 
-        template.convertAndSendToUser(uuid.toString(),"/queue","dupa", createHeaders(uuid.toString()));
+        template.convertAndSendToUser("1", "/queue","dupa", createHeaders(qrCode.getSessionId()));
     }
 
     private MessageHeaders createHeaders(String sessionId) {

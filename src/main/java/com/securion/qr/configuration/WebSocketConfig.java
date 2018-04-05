@@ -11,7 +11,7 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/qrCodeWebSocketEndpoint");
+        registry.addEndpoint("/qrCodeWebSocketEndpoint").addInterceptors(new HttpHandshakeInterceptor());
     }
 
     public void configureMessageBroker(MessageBrokerRegistry registry) {

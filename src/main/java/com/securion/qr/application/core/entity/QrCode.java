@@ -10,4 +10,5 @@ import java.util.UUID;
 public class QrCode {
     private UUID uuid = UUID.randomUUID();
     private String phoneIdentifier;
+    private String sessionId;
 }
