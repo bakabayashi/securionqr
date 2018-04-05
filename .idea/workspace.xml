@@ -23,14 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86d4d5fa-b734-4102-845a-d7daa9c6f44e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/HttpHandshakeInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/StompSubscribeEventListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/websocket/QrCodeWebSocketController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/dto/QrCodeRedirectDTO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/WebSocketSpecificConstants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/successful.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/HttpHandshakeInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/StompSubscribeEventListener.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/entity/QrCode.java" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/entity/QrCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SecurionQR.iml" afterPath="$PROJECT_DIR$/SecurionQR.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/QrCodeConverter.java" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/QrCodeConverter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/QrCodeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/QrCodeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/UrlUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/UrlUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/WebSocketConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/WebSocketConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/websocket/QrCodeWebSocketController.java" afterPath="$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/websocket/QrCodeWebSocketController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/index.html" afterPath="$PROJECT_DIR$/target/classes/static/index.html" />
     </list>
@@ -48,11 +53,10 @@
       <file leaf-file-name="QrCodeWebSocketController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/websocket/QrCodeWebSocketController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+            <state relative-caret-position="306">
+              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#904#934#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,18 +65,18 @@
       <file leaf-file-name="QrCodeConverter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/QrCodeConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="41" lean-forward="true" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+            <state relative-caret-position="357">
+              <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpHandshakeInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/HttpHandshakeInterceptor.java">
+      <file leaf-file-name="QrCodeRedirectDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/dto/QrCodeRedirectDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +87,8 @@
       <file leaf-file-name="QrCodeService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/QrCodeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="313">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,13 +96,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StompSubscribeEventListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/StompSubscribeEventListener.java">
+      <file leaf-file-name="UrlUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/UrlUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="383">
+              <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#856#857#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +112,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="578">
+              <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -121,9 +126,9 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -147,6 +152,9 @@
       <find>responseT</find>
       <find>Open</find>
       <find>session</find>
+      <find>url</find>
+      <find>&quot;/topic&quot;</find>
+      <find>qrCodeWebSocketEndpoint</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -163,10 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/banner.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/infrastructure/CustomQRCodeRepositoryTest.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/core/QRCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/infrastructure/CustomQRCodeRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/infrastructure/CustomQRCodeRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/QRCodeRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/repository/QRCodeRepository.java" />
@@ -194,9 +198,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/rest/QrCodeRestEndpoint.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/QrCodeConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/dto/PersistedQrCodeDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/UrlUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/rest/QrCodeWebSocketEndpoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/WebSocketHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/QrCodeWebsocketHandler.java" />
@@ -205,14 +207,21 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/static/lib/websocket_handler.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/SubscribeEventListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/websocket/QrCodeWebSocketEndpoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/StompSubscribeEventListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/HttpHandshakeInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/entity/QrCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/QrCodeService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/dto/QrCodeMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/websocket/QrCodeWebSocketController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/dto/QrCodeRedirectDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/QrCodeConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/WebSocketSpecificConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/successfull.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/QrCodeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/UrlUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/successful.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
       </list>
     </option>
   </component>
@@ -256,6 +265,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,6 +327,27 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="qr" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="securionqr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="securionqr" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qr" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="securionqr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="securionqr" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qr" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -360,15 +392,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="securionqr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="securionqr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="securionqr" type="b2602c69:ProjectViewProjectNode" />
@@ -456,10 +479,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -476,13 +497,6 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="infrastructure" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.securion.qr" />
-      <recent name="com.securion.qr.application" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/lib" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -491,6 +505,16 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources/lib" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.securion.qr" />
+      <recent name="com.securion.qr.application" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/lib" />
+    </key>
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="com.securion.qr.configuration.WebSocketConfig" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -684,7 +708,8 @@
       <updated>1521904934887</updated>
       <workItem from="1522425409123" duration="16740000" />
       <workItem from="1522738922901" duration="38000" />
-      <workItem from="1522853731753" duration="22420000" />
+      <workItem from="1522853731753" duration="22551000" />
+      <workItem from="1522958101062" duration="7601000" />
     </task>
     <task id="LOCAL-00001" summary="Corrections of endpoint and config.">
       <created>1522427327480</created>
@@ -714,7 +739,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522865673743</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Next version.">
+      <created>1522911882990</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1522911882990</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -735,14 +767,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39198000" />
+    <option name="totallyTimeSpent" value="46930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39872748" sideWeight="0.50208336" order="17" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -754,7 +786,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39872748" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39872748" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -816,138 +848,28 @@
     <MESSAGE value="Corrections of endpoint and config." />
     <MESSAGE value="Further development." />
     <MESSAGE value="Draft vrsion - to be decorated." />
-    <option name="LAST_COMMIT_MESSAGE" value="Draft vrsion - to be decorated." />
+    <MESSAGE value="Next version." />
+    <option name="LAST_COMMIT_MESSAGE" value="Next version." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/StompSubscribeEventListener.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/HttpHandshakeInterceptor.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/QrCodeService.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/HttpHandshakeInterceptor.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/websocket/QrCodeWebSocketController.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/QrCodeWebSocketHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="54" lean-forward="true" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/webjars/stomp-websocket/2.3.3/stomp-websocket-2.3.3.jar!/META-INF/maven/org.webjars/stomp-websocket/pom.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/AJAX.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_ajax.googleapis.com_ajax_libs_jquery_1.5.2_jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-631">
-          <caret line="6465" column="2" lean-forward="false" selection-start-line="6465" selection-start-column="2" selection-end-line="6465" selection-end-column="2" />
-          <folding>
-            <marker date="1522856877202" expanded="true" signature="27753:27786" ph="..." />
-            <marker date="1522856877202" expanded="true" signature="32626:32636" ph="..." />
-            <marker date="1522856877202" expanded="true" signature="32753:32784" ph="..." />
-            <marker date="1522856877202" expanded="true" signature="211857:211950" ph="..." />
-            <marker date="1522856877202" expanded="true" signature="211983:212076" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/lib/stomp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="408" column="10" lean-forward="false" selection-start-line="408" selection-start-column="4" selection-end-line="408" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/lib/qrcode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1853">
-          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="1614" column="0" lean-forward="false" selection-start-line="1614" selection-start-column="0" selection-end-line="1614" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/lib/websocket_handler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="54" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/lib/websocket_handler.js" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/webjars/jquery/3.1.0/jquery-3.1.0.jar!/META-INF/resources/webjars/jquery/3.1.0/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="9136" column="25" lean-forward="false" selection-start-line="9136" selection-start-column="25" selection-end-line="9136" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,7 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
           <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="68" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-393">
           <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="66" column="52" lean-forward="false" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-129">
           <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -995,23 +912,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/SubscribeEventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/SubscribeEventListener.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.28/tomcat-embed-websocket-8.5.28-sources.jar!/javax/websocket/Session.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,10 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="60" column="11" lean-forward="false" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-          <folding>
-            <element signature="e#1978#1979#0" expanded="false" />
-            <element signature="e#2018#2019#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,7 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="121" column="44" lean-forward="true" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,10 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="515" column="38" lean-forward="false" selection-start-line="515" selection-start-column="38" selection-end-line="515" selection-end-column="38" />
-          <folding>
-            <element signature="e#16256#16257#0" expanded="false" />
-            <element signature="e#16302#16303#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1049,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,23 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="368" column="4" lean-forward="false" selection-start-line="368" selection-start-column="4" selection-end-line="368" selection-end-column="4" />
-          <folding>
-            <element signature="e#6582#7506#0" expanded="false" />
-            <element signature="e#11997#12271#0" expanded="false" />
-            <element signature="e#12317#12511#0" expanded="false" />
-            <element signature="e#12579#12791#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.4.RELEASE/spring-messaging-5.0.4.RELEASE-sources.jar!/org/springframework/messaging/core/AbstractMessageSendingTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="110" column="28" lean-forward="false" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
-          <folding>
-            <element signature="e#3434#3435#0" expanded="false" />
-            <element signature="e#3469#3470#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1095,21 +975,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="102" lean-forward="false" selection-start-line="13" selection-start-column="102" selection-end-line="13" selection-end-column="102" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.4.RELEASE/spring-messaging-5.0.4.RELEASE-sources.jar!/org/springframework/messaging/handler/annotation/Header.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,15 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.4.RELEASE/spring-messaging-5.0.4.RELEASE-sources.jar!/org/springframework/messaging/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1149,10 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding>
-            <element signature="e#2385#2386#0" expanded="false" />
-            <element signature="e#2411#2412#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1160,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1176,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-25">
           <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,7 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="266" column="13" lean-forward="false" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1224,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1236,30 +1086,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.4.RELEASE/spring-messaging-5.0.4.RELEASE-sources.jar!/org/springframework/messaging/simp/SimpMessagingTemplate.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.4.RELEASE/spring-messaging-5.0.4.RELEASE-sources.jar!/org/springframework/messaging/support/MessageHeaderAccessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        <state relative-caret-position="180">
+          <caret line="254" column="26" lean-forward="false" selection-start-line="254" selection-start-column="26" selection-end-line="254" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/QrCodeConverter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.4.RELEASE/spring-messaging-5.0.4.RELEASE-sources.jar!/org/springframework/messaging/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="41" lean-forward="true" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+        <state relative-caret-position="204">
+          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/websocket/QrCodeWebSocketController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.4.RELEASE/spring-messaging-5.0.4.RELEASE-sources.jar!/org/springframework/messaging/core/AbstractMessageSendingTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#904#934#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-65">
+          <caret line="161" column="44" lean-forward="true" selection-start-line="161" selection-start-column="44" selection-end-line="161" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/dto/QrCodeMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,9 +1122,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1277,16 +1130,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/dto/PersistedQrCodeDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/dto/QrCodeUpdateDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/configuration/WebSocketSpecificConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.4.RELEASE/spring-messaging-5.0.4.RELEASE-sources.jar!/org/springframework/messaging/simp/SimpMessagingTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="207" column="16" lean-forward="false" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/infrastructure/websocket/QrCodeWebSocketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/QrCodeConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/UrlUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+          <folding>
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/core/dto/QrCodeRedirectDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/successful.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/securion/qr/application/service/QrCodeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="313">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1295,8 +1235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="578">
+          <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
           <folding />
         </state>
       </provider>

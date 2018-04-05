@@ -21,7 +21,11 @@ public class UrlUtils {
     private static final String PROTOCOL_DELIMITER = "://";
     private static final String DELIMITER = "/";
 
-    public String generateRedirectUrl(UUID uuid) {
+    public String createMobileTargetUrl(UUID uuid) {
         return protocol + PROTOCOL_DELIMITER + domain + contextPath + QR_CODES_PATH + DELIMITER + uuid.toString();
+    }
+
+    String createSuccessfulUrl() {
+        return "successful.html";
     }
 }

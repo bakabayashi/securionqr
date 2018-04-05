@@ -15,7 +15,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+import static com.securion.qr.application.core.QrCodeConverter.toRedirectDto;
 import static com.securion.qr.application.core.QrCodeConverter.update;
+import static com.securion.qr.configuration.WebSocketSpecificConstants.REPLY_PATH;
 
 @Service
 @RequiredArgsConstructor
@@ -23,6 +25,7 @@ public class QrCodeService {
     private final QrCodeRepository qrCodeRepository;
     private final QrCodeConverter qrCodeConverter;
     private final SimpMessagingTemplate template;
+    private final UrlUtils urlUtils;
 
     public PersistedQrCodeDTO create() {
         return qrCodeConverter.toDto(qrCodeRepository.save(new QrCode()));
@@ -34,7 +37,7 @@ public class QrCodeService {
 
         update(qrCodeUpdateDTO, qrCode);
 
-        template.convertAndSendToUser("1", "/queue","dupa", createHeaders(qrCode.getSessionId()));
+        template.convertAndSendToUser(qrCode.getSessionId(), REPLY_PATH, toRedirectDto(qrCode, urlUtils.createSuccessfulUrl()), createHeaders(qrCode.getSessionId()));
     }
 
     private MessageHeaders createHeaders(String sessionId) {
@@ -43,5 +46,4 @@ public class QrCodeService {
         headerAccessor.setLeaveMutable(true);
         return headerAccessor.getMessageHeaders();
     }
-
 }

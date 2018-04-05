@@ -6,16 +6,19 @@ import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBr
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
 
+import static com.securion.qr.configuration.WebSocketSpecificConstants.*;
+
 @Configuration
 @EnableWebSocketMessageBroker
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/qrCodeWebSocketEndpoint").addInterceptors(new HttpHandshakeInterceptor());
+        registry.addEndpoint(QR_CODE_WEB_SOCKET_ENDPOINT);
     }
 
     public void configureMessageBroker(MessageBrokerRegistry registry) {
-        registry.setApplicationDestinationPrefixes("/app");
-        registry.enableSimpleBroker("/topic", "/queue");
+        registry.setApplicationDestinationPrefixes(APP_PATH);
+        registry.enableSimpleBroker(QUEUE_PATH);
+        registry.setUserDestinationPrefix(USER_PATH);
     }
 }
