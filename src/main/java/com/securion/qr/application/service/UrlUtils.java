@@ -9,13 +9,10 @@ import static com.securion.qr.infrastructure.rest.QrCodeRestEndpoint.QR_CODES_PA
 
 @Component
 public class UrlUtils {
-    @Value("${server.servlet.contextPath}")
     private String contextPath;
 
-    @Value("${server.domain}")
     private String domain;
 
-    @Value("${server.protocol}")
     private String protocol;
 
     private static final String PROTOCOL_DELIMITER = "://";
@@ -27,5 +24,20 @@ public class UrlUtils {
 
     String createSuccessfulUrl() {
         return "successful.html";
+    }
+
+    @Value("${server.protocol}")
+    public void setProtocol(String protocol) {
+        this.protocol = protocol;
+    }
+
+    @Value("${server.domain}")
+    public void setDomain(String domain) {
+        this.domain = domain;
+    }
+
+    @Value("${server.servlet.contextPath}")
+    public void setContextPath(String contextPath) {
+        this.contextPath = contextPath;
     }
 }

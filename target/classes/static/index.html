@@ -28,7 +28,6 @@
   client.connect("", "", function () {
     client.subscribe("/user/queue/reply", function (message) {
       if(message.body) {
-        var parsedResponse = JSON.parse(message.body)
         window.location.replace(JSON.parse(message.body).redirectUrl)
       }
     })

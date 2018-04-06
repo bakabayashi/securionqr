@@ -7,9 +7,6 @@ import com.securion.qr.application.core.entity.QrCode;
 import com.securion.qr.application.core.exception.QrCodeNotFoundException;
 import com.securion.qr.application.repository.QrCodeRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.messaging.MessageHeaders;
-import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
-import org.springframework.messaging.simp.SimpMessageType;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +14,7 @@ import java.util.UUID;
 
 import static com.securion.qr.application.core.QrCodeConverter.toRedirectDto;
 import static com.securion.qr.application.core.QrCodeConverter.update;
+import static com.securion.qr.application.service.SimpUtils.createHeaders;
 import static com.securion.qr.configuration.WebSocketSpecificConstants.REPLY_PATH;
 
 @Service
@@ -38,12 +36,5 @@ public class QrCodeService {
         update(qrCodeUpdateDTO, qrCode);
 
         template.convertAndSendToUser(qrCode.getSessionId(), REPLY_PATH, toRedirectDto(qrCode, urlUtils.createSuccessfulUrl()), createHeaders(qrCode.getSessionId()));
-    }
-
-    private MessageHeaders createHeaders(String sessionId) {
-        SimpMessageHeaderAccessor headerAccessor = SimpMessageHeaderAccessor.create(SimpMessageType.MESSAGE);
-        headerAccessor.setSessionId(sessionId);
-        headerAccessor.setLeaveMutable(true);
-        return headerAccessor.getMessageHeaders();
     }
 }
